@@ -12,7 +12,7 @@
 		395175FC1D7DA1FF0077541C /* LayoutDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395175F61D7DA1060077541C /* LayoutDefines.swift */; };
 		395175FD1D7DA34E0077541C /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395175F41D7DA1060077541C /* Constraint.swift */; };
 		399583281D88534200BCC40E /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399583271D88534200BCC40E /* Deprecations.swift */; };
-		AB80EAC41FF5C22F0094C303 /* TABSwiftLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80EAC31FF5C22F0094C303 /* TABSwiftLayoutTests.swift */; };
+		AB80EAC41FF5C22F0094C303 /* LayoutDefinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80EAC31FF5C22F0094C303 /* LayoutDefinesTests.swift */; };
 		AB80EAC61FF5C22F0094C303 /* TABSwiftLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395175E91D7DA0F00077541C /* TABSwiftLayout.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		395175F61D7DA1060077541C /* LayoutDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutDefines.swift; sourceTree = "<group>"; };
 		399583271D88534200BCC40E /* Deprecations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecations.swift; sourceTree = "<group>"; };
 		AB80EAC11FF5C22F0094C303 /* TABSwiftLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TABSwiftLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB80EAC31FF5C22F0094C303 /* TABSwiftLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TABSwiftLayoutTests.swift; sourceTree = "<group>"; };
+		AB80EAC31FF5C22F0094C303 /* LayoutDefinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDefinesTests.swift; sourceTree = "<group>"; };
 		AB80EAC51FF5C22F0094C303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,7 @@
 		AB80EAC21FF5C22F0094C303 /* TABSwiftLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB80EAC31FF5C22F0094C303 /* TABSwiftLayoutTests.swift */,
+				AB80EAC31FF5C22F0094C303 /* LayoutDefinesTests.swift */,
 				AB80EAC51FF5C22F0094C303 /* Info.plist */,
 			);
 			path = TABSwiftLayoutTests;
@@ -227,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB80EAC41FF5C22F0094C303 /* TABSwiftLayoutTests.swift in Sources */,
+				AB80EAC41FF5C22F0094C303 /* LayoutDefinesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
