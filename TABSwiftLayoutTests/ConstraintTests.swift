@@ -9,12 +9,12 @@
 import XCTest
 
 class ConstraintTests: XCTestCase {
-    
+	
+	private func simpleConstraint(view: UIView = UIView(), attribute: NSLayoutAttribute) -> NSLayoutConstraint {
+		return NSLayoutConstraint(item: view, attribute: attribute, relatedBy: .equal, toItem: UIView(), attribute: attribute, multiplier: 1, constant: 0)
+	}
+	
     func testConstraintTrait() {
-        func simpleConstraint(attribute: NSLayoutAttribute) -> NSLayoutConstraint {
-            return NSLayoutConstraint(item: UIView(), attribute: attribute, relatedBy: .equal, toItem: UIView(), attribute: attribute, multiplier: 1, constant: 0)
-        }
-        
         XCTAssertEqual(simpleConstraint(attribute: .top).trait, .TopMargin)
         XCTAssertEqual(simpleConstraint(attribute: .left).trait, .LeftMargin)
         XCTAssertEqual(simpleConstraint(attribute: .leading).trait, .LeftMargin)
@@ -30,6 +30,4 @@ class ConstraintTests: XCTestCase {
         
         XCTAssertEqual(simpleConstraint(attribute: .lastBaseline).trait, .None)
     }
-    
-    
 }
