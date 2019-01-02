@@ -166,9 +166,9 @@ public protocol ConstraintDefinition {
   var priority: LayoutPriority { get }
   var constant: CGFloat { get set }
   var multiplier: CGFloat { get }
-  var relation: LayoutRelation { get }
-  var firstAttribute: LayoutAttribute { get }
-  var secondAttribute: LayoutAttribute { get }
+  var relation: NSLayoutConstraint.Relation { get }
+  var firstAttribute: NSLayoutConstraint.Attribute { get }
+  var secondAttribute: NSLayoutConstraint.Attribute { get }
   var trait: ConstraintsTraitMask { get }
 }
 
@@ -218,9 +218,9 @@ public struct Constraint: ConstraintDefinition {
   public internal(set) var priority: LayoutPriority
   public var constant: CGFloat
   public internal(set) var multiplier: CGFloat
-  public internal(set) var relation: LayoutRelation
-  public internal(set) var firstAttribute: LayoutAttribute
-  public internal(set) var secondAttribute: LayoutAttribute
+  public internal(set) var relation: NSLayoutConstraint.Relation
+  public internal(set) var firstAttribute: NSLayoutConstraint.Attribute
+  public internal(set) var secondAttribute: NSLayoutConstraint.Attribute
   
   private var _enabled = true
   public var enabled: Bool {
